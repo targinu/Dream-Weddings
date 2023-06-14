@@ -12,9 +12,6 @@
       (click)="openFullscreen(imagem.src, i)" />
     </a>
   </div>
-
-  <!--teste-->
-
   <div id="fullscreen-overlay" (click)="closeFullscreen($event)" [ngStyle]="{ display: isFullscreenOpen ? 'flex' : 'none' }">
     <div id="fullscreen-image-container">
       <img id="fullscreen-image" [src]="fullscreenImageSrc" alt="">

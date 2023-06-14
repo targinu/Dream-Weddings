@@ -30,6 +30,12 @@
   margin: 2%;
 }
 
+img{
+  max-width: 100%;
+  width: 350px;
+  height: auto
+}
+
 .photo:hover {
   cursor: pointer;
 }
@@ -185,5 +191,15 @@ app-header-mobile {
 
   app-header-mobile {
     display: block;
+  }
+
+  #imagens{
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .photo{
+    margin: 2% 0 0 0;
   }
 }
