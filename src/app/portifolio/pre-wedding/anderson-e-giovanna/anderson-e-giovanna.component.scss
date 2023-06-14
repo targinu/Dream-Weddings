@@ -22,6 +22,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   padding-bottom: 7%;
+  background-color: #000
 }
 
 .photo {
@@ -195,6 +196,14 @@ app-header-mobile {
 
   .photo {
     margin: 2% 0 0 0;
+  }
+
+  #fullscreen-image-container {
+    max-height: 80vh;
+  }
+
+  #thumbnail-container {
+    display: none;
   }
 
   img:hover,
