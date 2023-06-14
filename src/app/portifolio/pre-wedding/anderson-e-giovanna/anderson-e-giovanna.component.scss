@@ -202,4 +202,16 @@ app-header-mobile {
   .photo{
     margin: 2% 0 0 0;
   }
+
+  img:hover,
+  img:focus,
+  img:active {
+  -webkit-filter: blur(0);
+  filter: blur(0);
+  -webkit-transition: 0.0s ease-in-out;
+  transition: 0.0s ease-in-out;
+  -webkit-box-shadow: 0 0 0 0 #484a3f;
+  -moz-box-shadow: 0 0 0 0 #484a3f;
+  box-shadow: 0 0 0 0 #484a3f;
+}
 }
