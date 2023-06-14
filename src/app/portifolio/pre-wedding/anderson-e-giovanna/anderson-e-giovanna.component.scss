@@ -1,5 +1,5 @@
 #fundo {
-  position: absolute;
+  position: fixed;
   height: 100%;
   width: 100%;
   background-color: #91947f;
@@ -194,7 +194,7 @@ app-header-mobile {
   }
 
   #fullscreen-image-container {
-    max-height: 80vh;
+    max-width: 80vh;
   }
 
   #thumbnail-container {
