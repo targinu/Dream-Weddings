@@ -30,10 +30,10 @@
   margin: 2%;
 }
 
-img{
+img {
   max-width: 100%;
   width: 350px;
-  height: auto
+  height: auto;
 }
 
 .photo:hover {
@@ -193,25 +193,29 @@ app-header-mobile {
     display: block;
   }
 
-  #imagens{
+  #imagens {
     justify-content: center;
     align-items: center;
     margin: 0;
   }
 
-  .photo{
+  .photo {
     margin: 2% 0 0 0;
+  }
+
+  #fullscreen-overlay {
+    display: none;
   }
 
   img:hover,
   img:focus,
   img:active {
-  -webkit-filter: blur(0);
-  filter: blur(0);
-  -webkit-transition: 0.0s ease-in-out;
-  transition: 0.0s ease-in-out;
-  -webkit-box-shadow: 0 0 0 0 #484a3f;
-  -moz-box-shadow: 0 0 0 0 #484a3f;
-  box-shadow: 0 0 0 0 #484a3f;
-}
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    -webkit-transition: 0s ease-in-out;
+    transition: 0s ease-in-out;
+    -webkit-box-shadow: 0 0 0 0 #484a3f;
+    -moz-box-shadow: 0 0 0 0 #484a3f;
+    box-shadow: 0 0 0 0 #484a3f;
+  }
 }
