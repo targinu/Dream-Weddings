@@ -1,0 +1,32 @@
+<div class="header">
+  <img
+    id="logo"
+    src="assets/logo.png"
+    alt="dream-weedings-logo"
+    width="100x"
+    height="78px"
+  />
+
+  <button
+    id="header-menu"
+    mat-icon-button
+    [matMenuTriggerFor]="menu"
+    aria-label="Menu"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <mat-menu #menu="matMenu">
+    <a href="inicio#sobre" class="menu">
+      <button mat-menu-item>Sobre</button>
+    </a>
+
+    <a href="contato" class="menu">
+      <button mat-menu-item>Contato</button>
+    </a>
+
+    <a href="portifolio" class="menu">
+      <button mat-menu-item>Portifólio</button>
+    </a>
+  </mat-menu>
+</div>

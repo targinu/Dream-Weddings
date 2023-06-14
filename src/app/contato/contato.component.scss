@@ -1,0 +1,148 @@
+* {
+  overflow-y: hidden;
+}
+
+#fundo {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #ebe4dc;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+#container-formulario {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 4%;
+}
+
+.formulario {
+  display: flex;
+}
+
+#box-esquerda {
+  background-color: #a3a3a3;
+  text-align: center;
+  font-family: "/src/assets/fonts/Logam-Regular.otf";
+  width: 40vw;
+  height: 100%;
+}
+
+#box-esquerda h1 {
+  font-family: "/src/assets/fonts/Diamond-Bridge.otf";
+  padding-top: 40px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.icons {
+  list-style: none;
+  margin-left: -30px;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+#box-direita {
+  background-color: #cccccc;
+  width: 40vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#box-direita input {
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: transparent;
+  padding: 10px 0 5px 0;
+  width: 100%;
+}
+
+.nome,
+.email {
+  margin-top: 40px;
+}
+
+.telphone,
+.assunto,
+.mensagem {
+  width: 100%;
+}
+
+.mensagem input {
+  height: 100px;
+}
+
+.botao {
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  width: 300px;
+}
+
+.input-group {
+  padding: 0 30px 30px 0;
+  /*display: grid;*/
+}
+
+.form-body {
+  margin-top: 22px;
+}
+
+.row {
+  display: flex;
+}
+
+/* responsivadade */
+app-header-mobile {
+  display: none;
+}
+
+/* mobile */
+@media (max-width: 800px) {
+  app-header-dark {
+    display: none;
+  }
+
+  app-header-mobile {
+    display: block;
+  }
+
+  #container-formulario {
+    flex-direction: column-reverse;
+    margin: auto;
+  }
+
+  #box-esquerda {
+    width: 100%;
+  }
+
+  #box-direita {
+    width: 100%;
+  }
+}
+
+/* DESKTOP menor */
+@media (max-width: 1400px) {
+  #box-direita {
+    font-size: 14px;
+    padding-left: 30px;
+  }
+}

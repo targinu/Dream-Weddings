@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  box-sizing: border-box;
+}
+
+.content {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  background-image: url(/assets/photos/_MG_1524.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 3s;
+
+  animation-name: animate;
+  animation-direction: alternate-reverse;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+  animation-duration: 30s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+}
+
+@keyframes animate {
+  0% {
+    background-image: url(/assets/photos/CIVIL_FERNANDA_E_RODRIGO.jpg);
+  }
+
+  20% {
+    background-image: url(/assets/photos/PRÉVIAANDRESSAERAYNER.jpg);
+  }
+
+  40% {
+    background-image: url(/assets/photos/_MG_1524.jpg);
+  }
+
+  60% {
+    background-image: url(/assets/photos/CIVIL_FERNANDA_E_RODRIGO.jpg);
+  }
+
+  80% {
+    background-image: url(/assets/photos/PRÉVIAANDRESSAERAYNER.jpg);
+  }
+
+  100% {
+    background-image: url(/assets/photos/_MG_1524.jpg);
+  }
+}

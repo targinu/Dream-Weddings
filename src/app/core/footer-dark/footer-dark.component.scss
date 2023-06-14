@@ -1,0 +1,58 @@
+footer {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  font-size: 14px;
+  font-family: "/src/assets/fonts/Logam-Regular.otf";
+  color: white;
+
+  background-color: #91947f;
+}
+
+ul {
+  padding-bottom: 30px;
+}
+
+#logo {
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+#contato {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.link {
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  padding-left: 10px;
+  margin-left: -40%;
+}
+
+@media (max-width: 700px) {
+  #logo {
+    width: 80%;
+    height: 80%;
+  }
+  #contato {
+    word-break: normal;
+    width: 320px;
+    text-align: center;
+  }
+  .link {
+    color: grey;
+  }
+  ul {
+    padding-bottom: 20px;
+  }
+}

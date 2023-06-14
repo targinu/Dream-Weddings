@@ -1,0 +1,61 @@
+app-header-mobile {
+  display: none;
+}
+
+#container-sobre {
+  margin: auto;
+  width: 80%;
+  text-align: left;
+  padding-bottom: 100px;
+}
+
+#sobre {
+  font-family: "/src/assets/fonts/Diamond-Bridge.otf";
+
+  font-size: 20px;
+  word-break: normal;
+  text-align: center;
+}
+
+.desc {
+  word-break: normal;
+  width: 80%;
+  text-align: justify;
+  font-family: "/src/assets/fonts/Logam-Regular.otf";
+  font-size: 18px;
+}
+
+.info {
+  margin: auto;
+  width: 100%;
+}
+
+#photo {
+  border-radius: 50%;
+}
+
+@media (max-width: 800px) {
+  app-header {
+    display: none;
+  }
+
+  app-header-mobile {
+    display: block;
+  }
+
+  #photo {
+    width: 150px;
+    height: 158.5px;
+  }
+
+  #sobre {
+    font-size: 10px;
+    margin-left: 30px;
+  }
+
+  .desc {
+    margin-left: 30px;
+    width: 100%;
+    font-size: 8px;
+  }
+}

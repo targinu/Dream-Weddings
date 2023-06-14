@@ -1,0 +1,34 @@
+<app-header></app-header>
+<app-header-mobile></app-header-mobile>
+
+<body>
+  <!--fundo header-->
+  <div id="fundo"></div>
+
+  <div id="imagens">
+    <a *ngFor="let imagem of imagens; let i = index">
+      <img [src]="imagem.src" [alt]="imagem.alt" width="350px" height="497px" class="photo"
+      [style.object-fit]="isFullscreenOpen ? 'contain' : 'cover'"
+      (click)="openFullscreen(imagem.src, i)" />
+    </a>
+  </div>
+
+  <!--teste-->
+
+  <div id="fullscreen-overlay" (click)="closeFullscreen($event)" [ngStyle]="{ display: isFullscreenOpen ? 'flex' : 'none' }">
+    <div id="fullscreen-image-container">
+      <img id="fullscreen-image" [src]="fullscreenImageSrc" alt="">
+      <div class="arrows-container">
+        <div class="arrow arrow-left" (click)="previousImage()">&lt;</div>
+        <div class="arrow arrow-right" (click)="nextImage()">&gt;</div>
+      </div>
+    </div>
+    <div id="thumbnail-container" [ngClass]="{ 'align-center': alignThumbnails, 'thumbnail-zoomed': isThumbnailZoomed }">
+      <div *ngFor="let imagem of imagens; let i = index" class="thumbnail">
+        <img [src]="imagem.src" [alt]="imagem.alt" (click)="changeImage(i)" [class.active]="i === activeImageIndex" />
+      </div>
+    </div>
+  </div>
+
+  <app-footer-dark></app-footer-dark>
+</body>

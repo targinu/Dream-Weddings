@@ -1,0 +1,158 @@
+<app-header-dark></app-header-dark>
+<app-header-mobile></app-header-mobile>
+
+<div id="fundo"></div>
+
+<div id="container-formulario">
+  <div class="formulario">
+    <div id="box-esquerda">
+      <h1>Entre em contato</h1>
+      <h4>
+        <a href="mailto:dreamweddingsphoto@gmail.com" class="link"
+          >dreamweddingsphoto@gmail.com</a
+        >
+      </h4>
+
+      <h4>(11) 95198-3373</h4>
+
+      <ul fxLayout="row" fxLayoutAlign="space-around center" class="icons">
+        <li>
+          <a href="https://www.instagram.com/dreamweddingsph/">
+            <img
+              id="instagram"
+              src="assets/icon/instagram.png"
+              alt="instagram"
+              width="20px"
+              height="20px"
+            />
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.facebook.com/dreamweddingslarinavarro">
+            <img
+              id="facebook"
+              src="assets/icon/facebook.png"
+              alt="facebook"
+              width="20px"
+              height="20px"
+            />
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://api.whatsapp.com/send/?phone=5511951983373&text&type=phone_number&app_absent=0"
+          >
+            <img
+              id="phone"
+              src="assets/icon/phone.png"
+              alt="phone"
+              width="20px"
+              height="20px"
+            />
+          </a>
+        </li>
+
+        <li>
+          <a href="mailto:dreamweddingsphoto@gmail.com">
+            <img
+              id="mail"
+              src="assets/icon/mail.png"
+              alt="mail"
+              width="20px"
+              height="20px"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="formulario">
+    <div id="box-direita">
+      <form
+        action="https://formsubmit.co/7cb2f776fe3c386f1ace65949ba365ca"
+        method="POST"
+      >
+        <input type="hidden" name="_captcha" value="false" />
+        <input
+          type="hidden"
+          name="_next"
+          value="http://localhost:4200/thanks.html"
+        />
+
+        <!-- FORM BODY -->
+        <div class="form-body">
+          <!-- Nome e email -->
+          <div class="row">
+            <div class="input-group nome">
+              <label>Nome</label>
+              <input
+                name="Nome"
+                type="text"
+                placeholder="Insira seu nome"
+                required
+              />
+            </div>
+            <div class="input-group email">
+              <label>Email</label>
+              <input
+                name="Email"
+                type="email"
+                placeholder="Insira seu email"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- Telefone -->
+          <div class="row">
+            <div class="input-group telphone">
+              <label>Telefone</label>
+              <input
+                name="Telefone"
+                type="tel"
+                placeholder="Insira seu telefone"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- Assunto -->
+          <div class="row">
+            <div class="input-group assunto">
+              <label>Assunto</label>
+              <input
+                name="Assunto"
+                type="text"
+                placeholder="Ex. Casamento, Pré-Wedding, civil..."
+                required
+              />
+            </div>
+          </div>
+
+          <!--  Mensagem   -->
+          <div class="row">
+            <div class="input-group mensagem">
+              <label for="">Mensagem</label>
+              <input
+                name="Mensagem"
+                type="text"
+                placeholder="Me conte mais sobre seu grande dia"
+                required
+              />
+            </div>
+          </div>
+
+          <!--  Enviar   -->
+          <div class="row botao">
+            <div class="input-group">
+              <button class="btn">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
