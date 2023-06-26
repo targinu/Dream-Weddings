@@ -55,6 +55,11 @@ export class AndersonEGiovannaComponent {
     }
   }
 
+  closeFullscreenWithButton() {
+    this.isFullscreenOpen = false;
+    this.isCentered = true;
+  }
+
   changeImage(index: number) {
     this.activeImageIndex = index;
     this.fullscreenImageSrc = this.imagens[index].src;

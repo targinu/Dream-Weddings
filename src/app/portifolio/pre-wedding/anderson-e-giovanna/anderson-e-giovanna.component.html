@@ -15,6 +15,9 @@
   <div id="fullscreen-overlay" (click)="closeFullscreen($event)" [ngStyle]="{ display: isFullscreenOpen ? 'flex' : 'none' }">
     <div id="fullscreen-image-container">
       <img id="fullscreen-image" [src]="fullscreenImageSrc" alt="">
+
+      <button id="close-button" (click)="closeFullscreenWithButton()">&times;</button>
+
       <div class="arrows-container">
         <div class="arrow arrow-left" (click)="previousImage()">&lt;</div>
         <div class="arrow arrow-right" (click)="nextImage()">&gt;</div>

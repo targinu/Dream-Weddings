@@ -116,6 +116,31 @@
   object-fit: contain;
 }
 
+#close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  font-size: 24px;
+  color: #333;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 0.5;
+  z-index: 9999;
+}
+
+#close-button:hover {
+  background-color: #ccc;
+  opacity: 1;
+}
+
 .arrow {
   width: 30px;
   height: 30px;
